@@ -1,0 +1,63 @@
+.contenedor{
+border: 3px dashed #c4c4c4;
+background: #ffedd6c9;
+	display: inline-flex;
+	flex-direction: row;
+    align-content: center;
+    align-content: space-around;
+}
+
+.caja1{
+	background-color: rgb(255, 255, 255);
+	width: 280px;
+	height: 120px;
+	margin: 10px;
+	font-size: 16px;
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+		}
+
+.caja2{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 100px;
+    margin: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+                }
+
+.caja3{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 180px;
+    margin: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+}
+
+.caja4{
+	background-color: rgb(255, 255, 255);
+	width: 260px;
+	height: 100px;
+	margin: 10px;
+	font-size: 16px;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+		}
+
+h3{font-family:Georgia, 'Times New Roman', Times, serif;
+    }
