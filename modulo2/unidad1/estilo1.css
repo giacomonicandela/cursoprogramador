@@ -1,0 +1,16 @@
+.cuadrado {
+    border-style:double;
+    border-color: gray;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}
+.rosa {
+    background-color: pink;
+}
+.violeta {
+    background-color: violet;
+}
+.blanco {
+    background-color: white;
+}
