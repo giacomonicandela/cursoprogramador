@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="container-fluid" style="background-color: rgb(175, 175, 175);">
+    <h4 class="text-center">Cachorros</h4>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-3" style="background-color: rgb(190, 253, 255);"><img src="cachorro.jpg"
+          class="img-thumbnail" alt="..."></div>
+      <div class="col-12 col-md-6 col-xl-3" style="background-color:rgb(255, 203, 231) "><img src="cachorro2.jpeg"
+          class="img-thumbnail" alt="..."></div>
+      <div class="col-12 col-md-6 col-xl-3" style="background-color:rgb(255, 248, 189) ;"><img src="cachorro3.jpg"
+          class="img-thumbnail" alt="..."></div>
+      <div class="col-12 col-md-6 col-xl-3" style="background-color: rgb(188, 255, 197);"><img src="cachorro4.jpg"
+          class="img-thumbnail" alt="..."></div>
+    </div>
+  </div>
+
+  <div class="container">
+    <form>
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Elija su foto favorita</label>
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Opcion</option>
+            <option value="1">Celeste</option>
+            <option value="2">Rosa</option>
+            <option value="3">Amarillo</option>
+            <option value="3">Verde</option>
+          </select>
+        </div>
+        <div class="col-auto my-1">
+          <div class="custom-control custom-checkbox mr-sm-2">
+            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+            <label class="custom-control-label" for="customControlAutosizing">Recordar</label>
+          </div>
+        </div>
+        <div class="col-auto my-1">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container-fluid">
+    <table class="table">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">Cachorros</th>
+          <th scope="col">Cachorro 1</th>
+          <th scope="col">Cachorro 2</th>
+          <th scope="col">Cachorro 3</th>
+          <th scope="col">Cachorro 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Caracteristicas</th>
+          <td>Bueno</td>
+          <td>Obediente</td>
+          <td>Cariñoso</td>
+          <td>Jugueton</td>
+        </tr>
+        <tr>
+          <th scope="row">Meses</th>
+          <td>5</td>
+          <td>16</td>
+          <td>8</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container-fluid">
+    <p>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Correo electronico</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">No compartiremos la direccion del usuario</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Registrarme</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form></p>
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tarjeta 1</h5>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tempora ea neque! Deleniti
+            deserunt qui, ad voluptatibus fuga, accusamus perferendis cumque porro, molestiae sapiente culpa aut
+            consequuntur repellat. Id, harum?</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tarjeta 2</h5>
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est ipsa eum, labore possimus
+            sint tempore unde itaque doloribus excepturi cupiditate provident dicta, exercitationem ipsam vitae
+            blanditiis suscipit accusamus laudantium nemo.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Tarjeta 3</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deserunt velit
+            deleniti nam excepturi et, inventore soluta numquam doloribus corporis laborum quas suscipit saepe
+            architecto assumenda quidem ratione nisi. Soluta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    <div class="alert alert-secondary" role="alert">
+      Para recibir informacion complete el formulario
+    </div>
+  </div>
+</p>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
