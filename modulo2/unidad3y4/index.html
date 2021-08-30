@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <title>Tienda Online de Loló</title>
 </head>
 
@@ -22,19 +22,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" data-scroll href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Novedades</a>
+                    <a class="nav-link" data-scroll href="#novedades">Novedades</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Historia</a>
+                    <a class="nav-link" data-scroll href="#historia">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
+                    <a class="nav-link" data-scroll href="#nosotros">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Conocenos</a>
+                    <a class="nav-link" data-scroll href="#conocenos">Conocenos</a>
                 </li>
             </ul>
         </div>
@@ -44,18 +44,21 @@
         <div id="home" class="row aling-items-center hero">
             <div class="col-lg-3 offset-lg-2">
                 <div id="caja">
-                <p>bajada</p>
-                <h1>Indumentaria femenina</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum magnam ipsam obcaecati
-                    ea unde expedita voluptate animi? Dolor ullam molestias, ut autem recusandae praesentium explicabo
-                    itaque sed hic necessitatibus!</p></div>
+                    <p>bajada</p>
+                    <h1>Indumentaria femenina</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum magnam ipsam
+                        obcaecati
+                        ea unde expedita voluptate animi? Dolor ullam molestias, ut autem recusandae praesentium
+                        explicabo
+                        itaque sed hic necessitatibus!</p>
+                </div>
             </div>
         </div>
 
 
     </div>
 
-    <div id="Novedades" class="row py-4">
+    <div id="novedades" class="row py-4">
         <div class="col-md-5 offset-md-2 py-3">
             <h2>Novedades</h2>
             <ul class="lista-novedades">
@@ -133,16 +136,120 @@
 
     </div>
 
-    <footer>
-        <p class="text-center">Diseñado por Candela Giacomoni, 2021</p>
-    </footer>
+    <div id="historia" class="row aling-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="img/foto.jpeg" alt="historia 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="img/foto1.jpeg" alt="historia 2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="img/foto2.jpeg" alt="historia 3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam, adipisci eligendi quibusdam
+                nobis quas similique. Natus tempora nihil placeat quae ullam doloremque animi nemo blanditiis adipisci.
+                Suscipit, at doloremque.</p>
+        </div>
+    </div>
+    <div id="nosotros" class="row aling-items-stretch my-3 staff py-4">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Nosotros</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img/nos1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana Gutierrez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/nos2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Victoria Fernandez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/nos3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chiara Torres</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/nos4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucia Pereyra</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+    <div id="conocenos" class="row py-4">
+        <div class="col-md-4 offset-md-2">
+            <h2>Visitanos</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2274313773396!2d-58.42220428519552!3d-34.59841006472339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb666703c59f%3A0x6f9fd2b57bacdcac!2s%C3%81rea%20de%20Desarrollo%20Profesional%20-%20Pasant%C3%ADas!5e0!3m2!1ses!2sar!4v1630363306662!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Contactanos</h2>
+            <Form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="...">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Tel</label>
+                    <input type="text" class="form-control" id="tel" placeholder="...">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </Form>
+        </div>
+    </div>
+        <footer>
+            <p class="text-center">Diseñado por Candela Giacomoni, 2021</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>
 </body>
 
 </html>
