@@ -1,0 +1,225 @@
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Loló</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" data-scroll href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#novedades">Novedades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-scroll href="#conocenos">Conocenos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="home" class="row aling-items-center hero">
+            <div class="col-lg-3 offset-lg-2">
+                <div id="caja">
+                    <p>bajada</p>
+                    <h1>Indumentaria femenina</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum magnam ipsam
+                        obcaecati
+                        ea unde expedita voluptate animi? Dolor ullam molestias, ut autem recusandae praesentium
+                        explicabo
+                        itaque sed hic necessitatibus!</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="novedades" class="row py-4">
+        <div class="col-md-5 offset-md-2 py-3">
+            <h2>Novedades</h2>
+            <ul class="lista-novedades">
+                {{#each novedades}}
+                <li><a href="javascript:void(0)" data-toggle="modal" data-target="#modal{{id}}"><img src="images/modelo1.jpg"
+                            style="width: 50px;">{{titulo}}</a></li>
+                {{/each}}
+                
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <div class="rounded py-3 testimonios">
+                <h2 class="text-center">Testimonios</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonio">
+                                <h5>"La ropa más linda la tienen acá!"</h5>
+                                <p>Celeste, Lanús</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"Me encanta todo!!"</h5>
+                                <p>Camila, Avellaneda</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="testimonio">
+                                <h5>"Muy buena calidad"</h5>
+                                <p>Luna, Adrogué</p>
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        {{#each novedades}}
+        <div class="modal fade" id="modal{{id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">{{titulo}}</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h3>{{subtitulo}}</h3>
+                        <p>{{cuerpo}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+    </div>
+
+    <div id="historia" class="row aling-items-center py-4">
+        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+            <img src="images/foto.jpeg" alt="historia 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+            <img src="images/foto1.jpeg" alt="historia 2" class="img-fluid">
+        </div>
+        <div class="col-12 d-sm-none">
+            <img src="images/foto2.jpeg" alt="historia 3" class="img-fluid">
+        </div>
+        <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+            <h2>Historia</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus totam, adipisci eligendi quibusdam
+                nobis quas similique. Natus tempora nihil placeat quae ullam doloremque animi nemo blanditiis adipisci.
+                Suscipit, at doloremque.</p>
+        </div>
+    </div>
+    <div id="nosotros" class="row aling-items-stretch my-3 staff py-4">
+        <div class="col-lg-8 offset-lg-2">
+            <h2>Nosotros</h2>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="images/nos1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ana Gutierrez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/nos2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Victoria Fernandez</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/nos3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chiara Torres</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/nos4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucia Pereyra</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus fugiat
+                            deleniti et rerum inventore iure eaque numquam nostrum minima magni eveniet id tempore
+                            voluptatibus illo nisi neque, nemo modi assumenda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="conocenos" class="row py-4">
+        <div class="col-md-4 offset-md-2">
+            <h2>Visitanos</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2274313773396!2d-58.42220428519552!3d-34.59841006472339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb666703c59f%3A0x6f9fd2b57bacdcac!2s%C3%81rea%20de%20Desarrollo%20Profesional%20-%20Pasant%C3%ADas!5e0!3m2!1ses!2sar!4v1630363306662!5m2!1ses!2sar"
+                    style="border:0;" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Contactanos</h2>
+            <Form action="/" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="..." name="nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="..." name="apellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="tel">Tel</label>
+                    <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" name="mensaje"></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </Form>
+            <p>{{message}}</p>
+        </div>
+    </div>
+        <footer>
+            <p class="text-center">Diseñado por Candela Giacomoni, 2021</p>
+        </footer>
