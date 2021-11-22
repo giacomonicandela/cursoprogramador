@@ -20,7 +20,7 @@ router.post('/', async (req, res, next) => {
   var obj = {
     to: 'giacomonicandelar@gmail.com',
     subject: 'contacto desde la web',
-    html: nombre + "se contactó a través de la eb y quiere más información a este correo : " + email + ". <br> Además, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + tel 
+    html: nombre + " se contactó a través de la web y quiere más información a este correo : " + email + ". <br> Además, hizo el siguiente comentario: " + mensaje + ". <br> Su tel es " + tel 
   }
 
   var transporter = nodemailer.createTransport({

@@ -27,37 +27,35 @@
     </div>
     <div class="col-md-4 mt-4 mt-sm-0">
         <h2>Contactanos</h2>
-        <Form>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="...">
+<Form action="conocenos" method="post">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="..." name="nombre">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="..." name="apellido">
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="...">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com" name="email">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
-            </div>
-            <div class="form-group">
-                <label for="tel">Tel</label>
-                <input type="text" class="form-control" id="tel" placeholder="...">
-            </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4"></textarea>
-                <p>   </p>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </Form>
+                <div class="form-group">
+                    <label for="tel">Tel</label>
+                    <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" name="mensaje"></textarea>
+                    <p> </p>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </Form>
+            <p>{{message}}</p>
+        </div>
     </div>
-</div>
-</div>
-</div>
-
 <footer>
     <p class="text-center">Diseñado por Candela Giacomoni, 2021</p>
 </footer>

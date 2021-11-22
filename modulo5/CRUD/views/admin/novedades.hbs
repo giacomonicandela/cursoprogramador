@@ -10,13 +10,21 @@
 </div>
 
 <div class="row">
-    <div class="col-7" style="margin-top:-9px ;">
+    <div class="col-6" style="margin-top:-9px ;">
         <h2>Listado de Novedades</h2>
     </div>
-    <div class="col-5 text-right">
+    <div class="col-2 text-right">
         <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i>Nuevo</a>
     </div>
-</div>
+
+<div class="col-4 text-right">
+    <form class="form-inline" action="/admin/novedades" method="get">
+    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" name="q">
+    <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+        <i class="fa fa-search" aria-hidden="true">Buscar</i>
+    </button>
+    </form>
+</div></div>
 
     <div class="row">
         <div class="col">
@@ -45,5 +53,7 @@
             </table>
         </div>
     </div>
+
+
 
 </div>
